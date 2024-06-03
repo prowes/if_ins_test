@@ -1,9 +1,8 @@
-''' Just a simple example of playwright tests. ## UPDATE IT
+''' Just some tests to check the saucedemo website.
 To run: pytest [--headed -s] tests.py'''
 from playwright.sync_api import Page
 from locators import LoginPage, InventoryScreen, Checkout, Cart, CheckoutOverview, SidebarMenu, CompletedView
 from data import URL, USERS, USERS_PASS
-from time import sleep
 import pytest
 
 #  split this file into 3?
