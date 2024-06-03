@@ -1,5 +1,5 @@
-''' Just some tests to check the saucedemo website.
-To run: pytest [--headed -s] tests.py'''
+''' A test to check the saucedemo website and the sorting.
+To run: pytest [--headed -s] test_sorting.py'''
 from playwright.sync_api import Page
 from pages.login_page import LoginPage
 from pages.inventory_screen import InventoryScreen

@@ -1,13 +1,13 @@
-''' Just some tests to check the saucedemo website.
-To run: pytest [--headed -s] tests.py'''
-from playwright.sync_api import Page
-from pages.login_page import LoginPage
-from pages.inventory_screen import InventoryScreen
+''' A test to check the saucedemo website and the purchasing flow.
+To run: pytest [--headed -s] test_purchases.py'''
+from data import USERS, USERS_PASS
 from pages.cart import CartScreen
 from pages.checkout import CheckoutScreen
 from pages.checkoutoverview import CheckoutOverviewScreen
 from pages.completed import CompletedViewScreen
-from data import USERS, USERS_PASS
+from pages.inventory_screen import InventoryScreen
+from pages.login_page import LoginPage
+from playwright.sync_api import Page
 
 
 def test_customer_purchases_three_products(page: Page):

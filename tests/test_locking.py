@@ -1,5 +1,5 @@
-''' Just some tests to check the saucedemo website.
-To run: pytest [--headed -s] test_locking.py'''
+''' A test to check the saucedemo website and the lockes user flow.
+To run: pytest [--headed] test_purchases.py'''
 from data import USERS, USERS_PASS
 from pages.login_page import LoginPage
 from playwright.sync_api import Page
