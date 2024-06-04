@@ -25,7 +25,7 @@ def test_user_sorting_expensive_to_cheap(page: Page):
     inventory_screen = InventoryScreen(page)
     assert inventory_screen.all_inventory.is_visible(), 'The products list is not visible'
     inventory_screen.sorting_dropdown.select_option(inventory_screen.high_low)
-    assert inventory_screen.test_price_sorting_is_working(True), 'Items are not sorted from low to high'
+    assert inventory_screen.test_price_sorting_is_working(True), 'Items are not sorted from high to low'
 
 
 def test_user_sorting_a_to_z(page: Page):
